@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "api/count.js",  // 指定入口文件
+        "use": "@vercel/node"   // 使用 Vercel Node.js 构建器
+      }
+    ],
+    "routes": [
+      {
+        "src": "/count.svg",     // 指定访问路径
+        "dest": "api/count.js"   // 映射到 API 路由
+      }
+    ]
+  }
+  
